@@ -1,26 +1,30 @@
 package com.example.mad;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.InputType;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.basgeekball.awesomevalidation.AwesomeValidation;
-import com.basgeekball.awesomevalidation.utility.RegexTemplate;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.braintreepayments.cardform.view.CardForm;
 
 public class CreditCardPayment extends AppCompatActivity {
         private EditText cardno,expdate,ccv;
         private Button btnpay;
+         CardForm cardFrom;
+
+         AlertDialog.Builder alertBuilder;
 
         DatabaseReference databaseReference;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,15 +33,40 @@ public class CreditCardPayment extends AppCompatActivity {
 
         databaseReference= FirebaseDatabase.getInstance().getReference("Creditcrd");
 
-        cardno=(EditText)findViewById(R.id.ET_CardNum);
-        expdate=(EditText)findViewById(R.id.ET_Expdate);
-        ccv=(EditText)findViewById(R.id.ET_Ccv);
-
-        btnpay=(Button)findViewById(R.id.btnPaynow);
+        cardFrom=findViewById(R.id.card_form);
+        btnpay=findViewById(R.id.btnPaynow);
+        cardFrom.cardRequired(true)
+                .expirationRequired(true)
+                .cvvRequired(true)
+                .postalCodeRequired(true)
+                .mobileNumberRequired(true)
+                .mobileNumberExplanation("SMS is required on this number")
+                .setup(CreditCardPayment.this);
+        cardFrom.getCvvEditText().setInputType(InputType.TYPE_CLASS_NUMBER|InputType.TYPE_NUMBER_VARIATION_PASSWORD);
         btnpay.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                addcreditcardDetails();
+            public void onClick(View v) {
+                if(cardFrom.isValid()){
+                    alertBuilder=new AlertDialog.Builder(CreditCardPayment.this);
+                    alertBuilder.setTitle("Confirm before purchase");
+                    alertBuilder.setMessage("Card Number: " + cardFrom.getCardNumber()+"\n" +
+                            "Card expiry date: " + cardFrom.getExpirationDateEditText().getText().toString() + "\n" +
+                            "Card Cvv: " +cardFrom.getCvv() + "\n" +
+                            "Phone Number: "+ cardFrom.getMobileNumber());
+                    alertBuilder.setPositiveButton("Confirm", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            dialog.dismiss();
+                            Toast.makeText(CreditCardPayment.this,"Thank you purchase",Toast.LENGTH_SHORT).show();
+                        }
+                    });
+                    alertBuilder.setNegativeButton("Cancle", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            dialog.dismiss();
+                        }
+                    });
+                }
             }
         });
     }

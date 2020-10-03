@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "42201106785",
+    "firebase_url": "https://fitzky-2.firebaseio.com",
+    "project_id": "fitzky-2",
+    "storage_bucket": "fitzky-2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:42201106785:android:e37dbdf5170cfa672ddd20",
+        "android_client_info": {
+          "package_name": "com.example.fitzky2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "42201106785-j4blkk2cel8pu4illkulke7ur21ief1f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.fitzky2",
+            "certificate_hash": "86a857142211187e39504948b60261f685e5a531"
+          }
+        },
+        {
+          "client_id": "42201106785-migiporta66ofsn6mu28a0a4oqj7atp1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcwKXyJChyeOIO3rVhMsN1Pr5e0O1kvTs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "42201106785-migiporta66ofsn6mu28a0a4oqj7atp1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

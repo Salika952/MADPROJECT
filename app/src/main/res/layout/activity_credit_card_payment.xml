@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreditCardPayment"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="32dp"
+        android:gravity="center"
+        android:text="@string/crditcrdDetails"
+        android:textColor="#EC0505"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="214dp"
+        android:layout_height="91dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        app:srcCompat="@drawable/crdt" />
+
+    <EditText
+        android:id="@+id/ET_CardNum"
+        android:layout_width="330dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/custom_text"
+        android:ems="10"
+        android:hint="@string/textView21"
+        android:inputType="number"
+        android:padding="10dp"
+        android:textColor="#877A7A"
+        android:textColorHint="#807D7D"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/ET_Expdate"
+        android:layout_width="330dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="16dp"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:background="@drawable/custom_text"
+        android:ems="10"
+        android:hint="@string/textView43"
+        android:inputType="textPersonName"
+        android:textColor="#877A7A"
+        android:textColorHint="#807D7D"
+        />
+
+    <EditText
+        android:id="@+id/ET_Ccv"
+        android:layout_width="330dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/custom_text"
+        android:ems="10"
+        android:hint="@string/textView53"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColor="#877A7A"
+        android:textColorHint="#807D7D"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnPaynow"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:textSize="22sp"
+        android:padding="10dp"
+        android:layout_marginBottom="70dp"
+        android:background="@drawable/custom_button"
+        android:text="@string/button7"
+        android:textColor="#EC0505" />
+
+
+
+
+
+</LinearLayout>

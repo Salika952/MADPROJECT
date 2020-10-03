@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Fitzky</string>
+    <string name="Payment_method_select_topic">PAYMENT METHOD</string>
+    <string name="select_cash_on_delivery">Cash On Delivery</string>
+    <string name="select_credit_card">Credit Card</string>
+
+    <string name="enter_postalcode">Postal Code</string>
+    <string name="enter_name">Name</string>
+    <string name="enter_phone_number">Phone Number</string>
+    <string name="enter_address">Address</string>
+    <string name="btn_save_Add_new_address">Save</string>
+
+    <string name="View_price_details_topic">PRICE DETAILS</string>
+    <string name="View_number_of_items">price(1 item)</string>
+
+    <string name="View_shoping_details_topic">SHIPPING DETAILS</string>
+    <string name="view_customer_name">Kamal Perera</string>
+    <string name="view_customer_phone_number">+94 776754345</string>
+    <string name="view_customer_address">No2,Main Street,Matara</string>
+    <string name="view_customer_postal_code">412</string>
+    <string name="btn_back_to_cart">BACK TO CART</string>
+    <string name="change_or_add_address">Change Or Add</string>
+    <string name="btn_continue_to_select_payment_method">CONTINUE</string>
+
+    <string name="textview15">Verification code has been send to +94 xxxxxxxxx </string>
+    <string name="textView16">Enter 6-digit code</string>
+    <string name="button6">Confirm</string>
+
+    <string name="textView21">Card No.</string>
+    <string name="textView43">Expiration Date</string>
+    <string name="textView53">CVV</string>
+    <string name="button7">Next</string>
+    <string name="OTP">Enter OTP</string>
+    <string name="AdShippingDetails">Add your shipment Details</string>
+    <string name="crditcrdDetails">Enter your Credit Card Details</string>
+    <string name="invalid_name">Please enter your name</string>
+    <string name="invalid_number">Please enter valid number!</string>
+    <string name="invalid_address">Please enter address</string>
+    <string name="Empty_postalcode">Please enter postal code</string>
+    <string name="OrderId">YOUR ORDER ID:</string>
+
+</resources>

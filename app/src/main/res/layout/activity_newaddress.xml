@@ -96,7 +96,7 @@
         android:background="@drawable/custom_button"
         android:padding="10dp"
         android:text="@string/btn_save_Add_new_address"
-        android:textColor="#E42315"
+        android:textColor="#FAF4F4"
         android:textSize="22sp"
         android:textStyle="bold" />
 

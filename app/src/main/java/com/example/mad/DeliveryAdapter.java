@@ -27,7 +27,6 @@ public class DeliveryAdapter extends RecyclerView.Adapter<DeliveryAdapter.Myview
         this.context=c;
         this.deliver=deliver;
     }
-
     @NonNull
     @Override
     public MyviewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -47,14 +46,12 @@ public class DeliveryAdapter extends RecyclerView.Adapter<DeliveryAdapter.Myview
         holder.btnDelete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 DatabaseReference databaseReference= FirebaseDatabase.getInstance().getReference("delivery").child(deliver.getId());
                 databaseReference.removeValue();
                 Toast.makeText(context,"Deleted Sucessfully!!!",Toast.LENGTH_SHORT).show();
 
             }
         });
-
         holder.btnUpdate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -47,7 +47,7 @@ public class AdminUpdateData extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 AlertDialog.Builder builder=new AlertDialog.Builder(AdminUpdateData.this);
-                builder.setMessage("Are you sure this details?").setPositiveButton("confirm", new DialogInterface.OnClickListener() {
+                builder.setMessage("Are you sure update this details?").setPositiveButton("confirm", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         DatabaseReference databaseReference= FirebaseDatabase.getInstance().getReference("delivery").child(id);
@@ -68,8 +68,6 @@ public class AdminUpdateData extends AppCompatActivity {
 
                 AlertDialog alert=builder.create();
                 alert.show();
-
-
             }
         });
     }

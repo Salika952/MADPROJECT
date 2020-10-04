@@ -10,7 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".CurencyConv"></activity>
-        <activity android:name=".CurrencyConvertr" />
         <activity android:name=".SuccessMsg" />
         <activity android:name=".AdminUpdateData" />
         <activity android:name=".Verify_OTP" />

@@ -42,5 +42,6 @@
     <string name="convrtUSI">Convert to USI</string>
     <string name="cnvrtSrilanka">Convert to Sri Lanka</string>
     <string name="convert">CONVERT</string>
+    <string name="resultconvert">results</string>
 
 </resources>

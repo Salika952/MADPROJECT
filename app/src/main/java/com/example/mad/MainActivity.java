@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
         button4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent4 = new Intent(MainActivity.this,CurrencyConvertr.class);
+                Intent intent4 = new Intent(MainActivity.this,CurencyConv.class);
                 startActivity(intent4);
             }
         });

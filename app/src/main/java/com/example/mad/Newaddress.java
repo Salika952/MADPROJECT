@@ -54,10 +54,7 @@ public class Newaddress extends AppCompatActivity {
             }
         });
     }
-
     public void AddShippingDetails(){
-
-
         if(awesomeValidation.validate()){
             AlertDialog.Builder builder=new AlertDialog.Builder(Newaddress.this);
             builder.setMessage("Are you sure this details?").setPositiveButton("confirm", new DialogInterface.OnClickListener() {
@@ -67,8 +64,6 @@ public class Newaddress extends AppCompatActivity {
                     String Contact=contact.getText().toString();
                     String Postcode=postalcode.getText().toString();
                     String Address=address.getText().toString();
-
-
                     String id=databaseReference.push().getKey();
                     delivery cashOndelivery=new delivery(id,Name,Contact,Postcode,Address);
                     databaseReference.child(id).setValue(cashOndelivery);
@@ -77,7 +72,6 @@ public class Newaddress extends AppCompatActivity {
                     Toast.makeText(Newaddress.this,"Sucesfully Enter your Details!! ",Toast.LENGTH_SHORT).show();
 
                     Intent intent=new Intent(getApplicationContext(),Verify_OTP.class);
-                    //intent.putExtra("Contact",Contact);
                     Bundle extras = new Bundle();
                     extras.putString("Contact",Contact);
                     extras.putString("ID",id);
@@ -88,8 +82,6 @@ public class Newaddress extends AppCompatActivity {
 
             AlertDialog alert=builder.create();
             alert.show();
-
-
         }else{
             Toast.makeText(Newaddress.this,"Please complte the form!!!!! ",Toast.LENGTH_SHORT).show();
         }

@@ -10,8 +10,25 @@ import static org.junit.Assert.*;
  * @see <a href="http://d.android.com/tools/testing">Testing documentation</a>
  */
 public class ExampleUnitTest {
-    @Test
-    public void addition_isCorrect() {
-        assertEquals(4, 2 + 2);
+
+    private CurencyConv curencyConv;
+
+    public void setup(){
+        curencyConv=new CurencyConv();
     }
+
+    @Test
+    public void USI_isCorrect() {
+        float result=curencyConv.convertToUSI(180);
+        assertEquals(1,result,0);
+    }
+
+
+
+    @Test
+    public void Srilanka_isCorrect() {
+        float result=curencyConv.convertToSriLanka(180);
+        assertEquals(32400,result,0);
+    }
+
 }

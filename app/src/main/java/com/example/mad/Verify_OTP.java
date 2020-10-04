@@ -116,19 +116,12 @@ public class Verify_OTP extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()){
                             Intent intent = new Intent(getApplicationContext(),SuccessMsg.class);
-                            //intent.putExtra("ContactVerify",Contact);
-                            //startActivity(intent);
                             Bundle extras = new Bundle();
                             extras.putString("Contact",contact);
                             extras.putString("ID",id);
                             intent.putExtras(extras);
                             startActivity(intent);
 
-
-
-                            //Intent intent=new Intent(getApplicationContext(),successMassage.class);
-                            //intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-                            //startActivity(intent);
                         }else{
                             Toast.makeText(Verify_OTP.this,task.getException().getMessage(),Toast.LENGTH_SHORT).show();
                         }

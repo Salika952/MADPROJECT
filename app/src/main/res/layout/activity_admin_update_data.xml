@@ -69,7 +69,7 @@
                 android:gravity="center"
                 android:text="Update"
                 android:textAllCaps="false"
-                android:textColor="#F44336"
+                android:textColor="#F5F8F8"
                 android:textSize="24sp" />
 
         </LinearLayout>

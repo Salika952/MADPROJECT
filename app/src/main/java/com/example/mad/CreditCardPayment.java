@@ -51,7 +51,6 @@ public class CreditCardPayment extends AppCompatActivity {
         String Expdate=expdate.getText().toString();
         String Ccv=ccv.getText().toString();
 
-
         if(TextUtils.isEmpty(Cardno)){
             Toast.makeText(CreditCardPayment.this,"Plese provide your card Number!! ",Toast.LENGTH_SHORT).show();
         }
@@ -68,11 +67,6 @@ public class CreditCardPayment extends AppCompatActivity {
 
             cardno.setText("");
             Toast.makeText(CreditCardPayment.this, "Sucesfully enter your details ", Toast.LENGTH_SHORT).show();
-
-            //Intent intent=new Intent(getApplicationContext(),Verify_OTP.class);
-            //intent.putExtra("Contact",Contact);
-            //startActivity(intent);
-
             startActivity(new Intent(CreditCardPayment.this, Newaddress.class));
 
         }

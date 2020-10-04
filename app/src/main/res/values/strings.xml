@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Fitzky</string>
+    <string name="Add_A_Discount">Add A Discount</string>
+    <string name="Discount_Name">Discount Name</string>
+    <string name="Discount_ID">Discount ID</string>
+    <string name="Discount_Percentage">Discount Percentage</string>
+    <string name="Discount_Price">Discount Price</string>
+    <string name="add_new">ADD NEW</string>
+    <string name="ManageDiscount">Manage Discount</string>
+    <string name="view">View</string>
+    <string name="enterid">Enter Item ID</string>
+    <string name="viewitemid">Item ID</string>
+    <string name="viewdisiid">Discount ID</string>
+    <string name="viewdisname">Discount Name</string>
+    <string name="viewdisper">Discount Percentage</string>
+    <string name="viewdisprice">Discount Price</string>
+</resources>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "70986780547",
+    "firebase_url": "https://fitzky-ffc57.firebaseio.com",
+    "project_id": "fitzky-ffc57",
+    "storage_bucket": "fitzky-ffc57.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:70986780547:android:5360c2963455729e6a30b6",
+        "android_client_info": {
+          "package_name": "com.example.fitzky"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "70986780547-rhb0mcmo8jj85ipc2oo9unfjvria4qfl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDk-HBF67xknRTUfd-Z-0jq10Jth0xUO7Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "70986780547-rhb0mcmo8jj85ipc2oo9unfjvria4qfl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

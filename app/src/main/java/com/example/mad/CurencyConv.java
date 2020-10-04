@@ -4,11 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class DisplayDeliverydetails extends AppCompatActivity {
+public class CurencyConv extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_display_deliverydetails);
+        setContentView(R.layout.activity_curency_conv);
     }
 }

@@ -1,26 +1,30 @@
 package com.example.mad;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.InputType;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.basgeekball.awesomevalidation.AwesomeValidation;
-import com.basgeekball.awesomevalidation.utility.RegexTemplate;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.braintreepayments.cardform.view.CardForm;
 
 public class CreditCardPayment extends AppCompatActivity {
         private EditText cardno,expdate,ccv;
         private Button btnpay;
+         CardForm cardFrom;
+
+         AlertDialog.Builder alertBuilder;
 
         DatabaseReference databaseReference;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,7 +44,7 @@ public class CreditCardPayment extends AppCompatActivity {
                 addcreditcardDetails();
             }
         });
-    }
+}
 
     public void addcreditcardDetails(){
         String Cardno=cardno.getText().toString();

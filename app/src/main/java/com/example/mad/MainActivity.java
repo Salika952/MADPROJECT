@@ -13,7 +13,7 @@ import android.widget.ImageButton;
 public class MainActivity extends AppCompatActivity {
     private ImageButton button1;
     private ImageButton button2;
-    private Button button3;
+    private Button button3,button4;
 
 
     @SuppressLint("WrongViewCast")
@@ -47,6 +47,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent3 = new Intent(MainActivity.this, AdminPaymentHandling.class);
                 startActivity(intent3);
+            }
+        });
+
+        button4 = (Button) findViewById(R.id.btnConvrt);
+        button4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent4 = new Intent(MainActivity.this,CurrencyConvertr.class);
+                startActivity(intent4);
             }
         });
 

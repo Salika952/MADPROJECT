@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     android:orientation="vertical"
     android:padding="20dp"
     tools:context=".Newaddress">
@@ -12,11 +13,11 @@
         android:id="@+id/txtAddNewAddress"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="16dp"
         android:layout_marginBottom="32dp"
         android:gravity="center"
         android:text="@string/AdShippingDetails"
-        android:textColor="#EC0505"
+        android:textColor="#3F51B5"
         android:textSize="30sp"
         android:textStyle="bold" />
 
@@ -25,25 +26,24 @@
         android:layout_width="71dp"
         android:layout_height="60dp"
         android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
         android:background="@drawable/location"
-        app:srcCompat="@drawable/location"
-        android:layout_marginBottom="16dp"/>
+        app:srcCompat="@drawable/location" />
 
     <EditText
         android:id="@+id/ET_Name"
         android:layout_width="320dp"
         android:layout_height="54dp"
+        android:layout_marginBottom="16dp"
         android:background="@drawable/custom_text"
         android:ems="10"
         android:hint="@string/enter_name"
         android:inputType="textPersonName"
+        android:padding="10dp"
         android:textColor="#9F9898"
         android:textColorHighlight="#F8F0F0"
         android:textColorHint="#7E7979"
-        android:textSize="18sp"
-        android:padding="10dp"
-        android:layout_marginBottom="16dp" />
-
+        android:textSize="18sp" />
 
 
     <EditText
@@ -51,11 +51,11 @@
         android:layout_width="320dp"
         android:layout_height="54dp"
         android:layout_marginBottom="16dp"
-        android:padding="10dp"
         android:background="@drawable/custom_text"
         android:ems="10"
         android:hint="Phone Number"
         android:inputType="phone"
+        android:padding="10dp"
         android:textColor="#AFA4A4"
         android:textColorHint="#7E7979"
         android:textSize="18sp" />
@@ -65,40 +65,40 @@
         android:layout_width="320dp"
         android:layout_height="54dp"
         android:layout_marginBottom="16dp"
-        android:padding="10dp"
         android:background="@drawable/custom_text"
         android:ems="10"
-        android:textSize="18sp"
         android:hint="Postal Code"
         android:inputType="textPostalAddress"
+        android:padding="10dp"
         android:textColor="#BFB5B5"
-        android:textColorHint="#7E7979" />
+        android:textColorHint="#7E7979"
+        android:textSize="18sp" />
 
     <EditText
         android:id="@+id/ET_Address"
         android:layout_width="320dp"
         android:layout_height="54dp"
         android:layout_marginBottom="50dp"
-        android:padding="10dp"
         android:background="@drawable/custom_text"
         android:ems="10"
-        android:textSize="18sp"
         android:gravity="start|top"
         android:hint="Address"
         android:inputType="textMultiLine"
-        android:textColorHint="#7E7979" />
+        android:padding="10dp"
+        android:textColorHint="#7E7979"
+        android:textSize="18sp" />
 
     <Button
         android:id="@+id/btnSaveNewAddress"
         android:layout_width="320dp"
         android:layout_height="50dp"
         android:layout_marginBottom="70dp"
-        android:padding="10dp"
         android:background="@drawable/custom_button"
+        android:padding="10dp"
         android:text="@string/btn_save_Add_new_address"
         android:textColor="#E42315"
-        android:textStyle="bold"
-        android:textSize="22sp" />
+        android:textSize="22sp"
+        android:textStyle="bold" />
 
 
 </LinearLayout>

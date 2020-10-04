@@ -29,6 +29,7 @@ public class Verify_OTP extends AppCompatActivity {
     Button verify_btn;
     EditText phoneNoEnteredByThecustomers;
     ProgressBar progressBar;
+    String contact,id;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,9 +43,13 @@ public class Verify_OTP extends AppCompatActivity {
         progressBar.setVisibility((View.GONE));
 
 
-        String Contact = getIntent().getStringExtra("Contact");
+        //Contact = getIntent().getStringExtra("Contact");
+        Intent intent = getIntent();
+        Bundle extras = intent.getExtras();
+        contact = extras.getString("Contact");
+        id = extras.getString("ID");
 
-        sendVerificationCodeToCustomer(Contact);
+        sendVerificationCodeToCustomer(contact);
 
         verify_btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -110,7 +115,16 @@ public class Verify_OTP extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()){
-                            startActivity(new Intent(Verify_OTP.this,SuccessMsg.class));
+                            Intent intent = new Intent(getApplicationContext(),SuccessMsg.class);
+                            //intent.putExtra("ContactVerify",Contact);
+                            //startActivity(intent);
+                            Bundle extras = new Bundle();
+                            extras.putString("Contact",contact);
+                            extras.putString("ID",id);
+                            intent.putExtras(extras);
+                            startActivity(intent);
+
+
 
                             //Intent intent=new Intent(getApplicationContext(),successMassage.class);
                             //intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);

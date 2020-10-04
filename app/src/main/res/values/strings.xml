@@ -37,6 +37,10 @@
     <string name="invalid_number">Please enter valid number!</string>
     <string name="invalid_address">Please enter address</string>
     <string name="Empty_postalcode">Please enter postal code</string>
-    <string name="OrderId">YOUR ORDER ID:</string>
+    <string name="odeRid">YOUR PHONE NUMBER AND ORDER ID:</string>
+    <string name="Amount">Enter the amount</string>
+    <string name="convrtUSI">Convert to USI</string>
+    <string name="cnvrtSrilanka">Convert to Sri Lanka</string>
+    <string name="convert">CONVERT</string>
 
 </resources>

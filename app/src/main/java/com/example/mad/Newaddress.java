@@ -25,8 +25,6 @@ public class Newaddress extends AppCompatActivity {
     DatabaseReference databaseReference;
     AwesomeValidation awesomeValidation;
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -79,8 +77,11 @@ public class Newaddress extends AppCompatActivity {
                     Toast.makeText(Newaddress.this,"Sucesfully Enter your Details!! ",Toast.LENGTH_SHORT).show();
 
                     Intent intent=new Intent(getApplicationContext(),Verify_OTP.class);
-                    intent.putExtra("Contact",Contact);
-                    intent.putExtra("id",id);
+                    //intent.putExtra("Contact",Contact);
+                    Bundle extras = new Bundle();
+                    extras.putString("Contact",Contact);
+                    extras.putString("ID",id);
+                    intent.putExtras(extras);
                     startActivity(intent);
                 }
             }).setNegativeButton("Cancle",null);

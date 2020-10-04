@@ -6,8 +6,22 @@
     android:layout_height="match_parent"
     android:fillViewport="true"
     android:scrollbars="vertical"
+    android:background="@drawable/background"
     android:scrollbarStyle="insideInset">
 
+
+    <ImageView
+        android:id="@+id/login_applogo"
+        android:layout_width="287dp"
+        android:layout_height="63dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+
+
+
+        app:layout_constraintVertical_bias="0.666"
+        app:srcCompat="@drawable/fitzky_logo001" />
 
 
 
@@ -15,7 +29,8 @@
         android:id="@+id/btn_account_setting"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="180dp"
+        android:layout_below="@+id/login_applogo"
+        android:layout_marginTop="170dp"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
         android:background="@drawable/buttons"

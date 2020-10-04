@@ -5,17 +5,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fitzky_home2"
+    android:background="@drawable/background"
     tools:context=".LoginActivity">
 
     <ImageView
         android:id="@+id/login_applogo"
-        android:layout_width="300dp"
-        android:layout_height="100dp"
-        android:src="@drawable/fitzky_logo"
+        android:layout_width="287dp"
+        android:layout_height="63dp"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="195dp"
-        />
+        android:layout_marginTop="150dp"
+
+
+
+
+        app:layout_constraintVertical_bias="0.666"
+        app:srcCompat="@drawable/fitzky_logo001" />
 
     <EditText
         android:id="@+id/login_phone_number_input"
@@ -26,6 +31,7 @@
         android:padding="20dp"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
+        android:layout_marginTop="150dp"
         android:hint="Phone Number"
         android:inputType="number"
         android:textColor="@color/colorPrimaryDark"
@@ -43,7 +49,7 @@
         android:padding="20dp"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
-        android:layout_marginTop="6dp"
+        android:layout_marginTop="15dp"
         android:hint="Password"
         android:inputType="textPassword"
         android:textColor="@color/colorPrimaryDark"

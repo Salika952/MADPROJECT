@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "258630200710",
+    "firebase_url": "https://productmanagement-ba830.firebaseio.com",
+    "project_id": "productmanagement-ba830",
+    "storage_bucket": "productmanagement-ba830.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:258630200710:android:6536b67ed49190dea51007",
+        "android_client_info": {
+          "package_name": "com.example.productmanagement"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "258630200710-rsrir22p9m2ep5visgsb0aqv079g1dp3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.productmanagement",
+            "certificate_hash": "027f58bbdcdde4891a644306cb1fad8fa9d5d528"
+          }
+        },
+        {
+          "client_id": "258630200710-1i3abvrul5tdhuoda3vhd0g0cdhcqm2o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDi65Az6NCZQujAtHPEDrzbmCdVN91THOM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "258630200710-1i3abvrul5tdhuoda3vhd0g0cdhcqm2o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

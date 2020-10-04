@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">ProductManagement</string>
+    <string name="btn_view" />
+    <string name="title_itemmanagement" />
+    <string name="txt_itemName" />
+    <string name="txt_itemid" />
+    <string name="txt_itemDescription" />
+    <string name="txt_itemIngredients" />
+    <string name="title_additem" />
+    <string name="lbl_itemID" />
+    <string name="lbl_itemName" />
+    <string name="lbl_itemIngredients" />
+    <string name="lbl_itemDescription" />
+    <string name="lbl_itemType" />
+    <string name="lbl_itemPrice" />
+    <string name="btn_cancell" />
+    <string name="btn_add" />
+    <string name="title_view_item" />
+    <string name="txt_searchid" />
+    <string name="title_update_item" />
+    <string name="btn_update" />
+</resources>

@@ -1,7 +1,7 @@
 package com.example.fitzky2.Model;
 
 public class Users {
-    private String name, phone, password, image, address;
+    public String name, phone, password, image, address;
 
     public Users()
     {
@@ -25,7 +25,7 @@ public class Users {
         this.name = name;
     }
 
-    public String getPhone() {
+    public  String getPhone() {
         return phone;
     }
 

@@ -51,7 +51,7 @@
         android:layout_marginRight="15dp"
         android:layout_marginTop="6dp"
         android:hint="New Username"
-        android:inputType="textPassword"
+        android:inputType="text"
         android:textColor="@color/colorPrimaryDark"
         android:textColorHint="@color/colorPrimaryDark"
         android:textSize="19sp"

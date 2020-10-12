@@ -38,7 +38,7 @@ public class AccountSettingActivity extends AppCompatActivity {
                 reff2.child(VariableClass.phoneNo).child("name").setValue(txtNewUn.getText().toString());
                 VariableClass.username=txtNewUn.getText().toString();
                 Toast.makeText(AccountSettingActivity.this, "Username changed successfully", Toast.LENGTH_SHORT).show();
-                Intent intent =new Intent(AccountSettingActivity.this,HomeActivity.class);
+                Intent intent =new Intent(AccountSettingActivity.this,ProfileActivity.class);
                 startActivity(intent);
             }
         });

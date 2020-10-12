@@ -42,7 +42,7 @@ Button save;
             public void onClick(View v) {
                 reff1.child(phoneNo).child("password").setValue(txtNewPwd.getText().toString());
                 Toast.makeText(ChangePwdActivity.this, "Password changed successfully", Toast.LENGTH_SHORT).show();
-                Intent intent =new Intent(ChangePwdActivity.this,HomeActivity.class);
+                Intent intent =new Intent(ChangePwdActivity.this,ProfileActivity.class);
                 startActivity(intent);
             }
         });

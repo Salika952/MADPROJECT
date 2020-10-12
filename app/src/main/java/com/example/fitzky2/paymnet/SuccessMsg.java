@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.example.fitzky2.Product.productRetrieve;
 import com.example.fitzky2.R;
 
 public class SuccessMsg extends AppCompatActivity {
@@ -34,7 +35,7 @@ public class SuccessMsg extends AppCompatActivity {
         btnBacktoCart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent3 = new Intent(SuccessMsg.this, PaymentType.class);
+                Intent intent3 = new Intent(SuccessMsg.this, productRetrieve.class);
                 startActivity(intent3);
             }
         });

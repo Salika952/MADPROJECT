@@ -43,23 +43,23 @@ public class PaymentType extends AppCompatActivity {
             }
         });
 
-        button3 = (Button) findViewById(R.id.btnpaymenthandling);
+     /*   button3 = (Button) findViewById(R.id.btnpaymenthandling);
         button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent3 = new Intent(PaymentType.this, AdminPaymentHandling.class);
                 startActivity(intent3);
             }
-        });
+        });   */
 
-       /* button4 = (Button) findViewById(R.id.btnConvrt);
+        button4 = (Button) findViewById(R.id.btnConvrt);
         button4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent4 = new Intent(PaymentType.this,CurrencyConvertr.class);
+                Intent intent4 = new Intent(PaymentType.this,CurencyConv.class);
                 startActivity(intent4);
             }
-        }); */
+        });
 
 
     }

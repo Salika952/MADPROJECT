@@ -11,7 +11,9 @@ import android.widget.Toast;
 
 import com.example.fitzky2.Discount.DiscountMenu;
 import com.example.fitzky2.Feedback.FeedbackManage;
+import com.example.fitzky2.Feedback.feedbackRetrieveData;
 import com.example.fitzky2.Product.ProductMenu;
+import com.example.fitzky2.paymnet.AdminPaymentHandling;
 import com.example.fitzky2.paymnet.PaymentType;
 
 public class AdminCategoryActivity extends AppCompatActivity {
@@ -51,7 +53,7 @@ public class AdminCategoryActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(AdminCategoryActivity.this,ProfileActivity.class);
+                Intent intent = new Intent(AdminCategoryActivity.this,Admin_handling_user_profile.class);
                 startActivity(intent);
             }
         });
@@ -70,7 +72,7 @@ public class AdminCategoryActivity extends AppCompatActivity {
         paymentbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent1 = new Intent(AdminCategoryActivity.this, PaymentType.class);
+                Intent intent1 = new Intent(AdminCategoryActivity.this, AdminPaymentHandling.class);
                 startActivity(intent1);
 
 
@@ -93,7 +95,7 @@ public class AdminCategoryActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(AdminCategoryActivity.this, FeedbackManage.class);
+                Intent intent = new Intent(AdminCategoryActivity.this,feedbackRetrieveData.class);
                 startActivity(intent);
             }
         });

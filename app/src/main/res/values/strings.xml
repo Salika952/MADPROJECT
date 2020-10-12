@@ -54,6 +54,16 @@
     <string name="Empty_postalcode">Please enter postal code</string>
     <string name="odeRid">YOUR PHONE NUMBER AND ORDER ID:</string>
     <string name="btnView">view shipping details</string>
+    <string name="description">Description :</string>
+    <string name="email">Email :</string>
+    <string name="title">Title :</string>
+    <string name="profile">Profile</string>
+    <string name="product">Product</string>
+    <string name="payment">Payment</string>
+    <string name="discount">Discount</string>
+    <string name="feedback">Feedback</string>
+    <string name="logout">Logout</string>
+    <string name="resultconvert">result</string>
 
 
 </resources>

@@ -65,8 +65,9 @@
         android:background="@drawable/input_design"
         android:ems="10"
         android:hint="@string/txt_itemIngredients"
-        android:inputType="textPersonName"
+
         android:singleLine="true"
+        android:inputType="number"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.484"

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="ditem_id" type="id" />
+    <item name="textView4" type="id" />
+    <item name="view_dis_id" type="id" />
+    <item name="textView6" type="id" />
+    <item name="textView8" type="id" />
+    <item name="view_dis_name" type="id" />
+    <item name="textView10" type="id" />
+    <item name="view_dis_percentage" type="id" />
+    <item name="btnDel" type="id" />
+    <item name="view_dis_price" type="id" />
+    <item name="srchbtn" type="id" />
+    <item name="btnEdit" type="id" />
+</resources>
